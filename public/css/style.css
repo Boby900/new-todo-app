@@ -1,7 +1,61 @@
-h1{
-    color: black;
-}
-.completed{
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .completed{
     color: gray;
     text-decoration: line-through;
 }
+body{
+    background-color: #EEF5FF;
+}
+li{
+    cursor: pointer;
+}
+  .input{
+    width: 300px;
+    border: none;
+    padding: 0.9rem;
+    padding: 10px;
+    border-bottom: 2px solid;
+    outline: none;
+  }
+  .todoItems{
+    font-size: 2rem;
+  }
+  .item{
+    position: relative;
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 9rem;
+    border-radius: 5px;
+    padding-left: 200px;
+  
+  }
+  
+input::placeholder {
+    font: 1.5rem sans-serif;
+}
+input{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+  .button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  @media all and (max-width:700px){
+    .button{
+        display: block;
+        margin: 0 auto
+    }
+    input{
+        margin-bottom: 2rem;
+    }
+  }
